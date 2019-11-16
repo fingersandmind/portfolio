@@ -31,8 +31,10 @@ $date = $dayOfWeek[$day];
 
 Route::group(['prefix' => $date],function(){
     Auth::routes();
-});
 
-Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('home', 'HomeController@index')->name('home');
+    Route::post('update', 'HomeController@updateData')->name('data.update');
+
+});
 
 Route::resource('/', 'AdminController');

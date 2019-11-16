@@ -16,6 +16,7 @@
 		<!-- Back to top -->
 		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
 
+		@include('sweetalert::alert')
 		<!-- Dashboard Core -->
 		@include('partials.admin.scripts')
 

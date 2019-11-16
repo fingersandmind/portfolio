@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\ProfileRequest;
+// use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,20 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.admin.home');
+        $profile = auth()->user()->profile;
+        return view('pages.admin.home', compact('profile'));
+    }
+
+    public function updateData(ProfileRequest $request)
+    {
+        $request->validated();
+        $user = auth()->user();
+
+        $user->profile()->updateOrCreate(
+            ['user_id' => $user->id],
+            $request->all()
+        );
+
+        return redirect()->route('home')->withSuccess('Updated Successfully!');
     }
 }
