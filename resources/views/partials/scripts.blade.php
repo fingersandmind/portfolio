@@ -5,7 +5,6 @@
 	<!-- Bootstrap -->
 	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 
-	<script src="{{ asset('assets/js/modernizr-2.6.2.min.js') }}"></script>
 	<!-- Waypoints -->
 	<script src="{{ asset('assets/js/jquery.waypoints.min.js') }}"></script>
 	<!-- Flexslider -->
