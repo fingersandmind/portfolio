@@ -10,6 +10,23 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    public function profile()
+    {
+        return $this->hasOne(Profile::class);
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::created(function ($user){
+            $user->profile()->create([
+                'about' => 'Edit me!',
+                'phone' =>  '09123456789',
+                'address' => 'Edit your location'
+            ]);
+        });
+    }
     /**
      * The attributes that are mass assignable.
      *

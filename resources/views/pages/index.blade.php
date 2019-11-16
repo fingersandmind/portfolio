@@ -11,7 +11,7 @@
                         <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                             <div class="slider-text-inner js-fullheight">
                                 <div class="desc">
-                                    <h1>Hi! <br>{{ ucfirst($user->name) }}</h1>
+                                    <h1>Hi! <br>{{ ucfirst($user->name) ?? 'John Doe' }}</h1>
                                     <p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
                                 </div>
                             </div>

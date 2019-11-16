@@ -1,7 +1,7 @@
 <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
     <div class="text-center">
-        <div class="author-img" style="background-image: url({{ asset('assets/images/about.jpg') }});"></div>
-        <h1 id="colorlib-logo"><a href="index.html">{{ ucfirst($user->name) }}</a></h1>
+        <div class="author-img" style="background-image: url({{ asset('assets/images/profile.jpg') }});"></div>
+        <h1 id="colorlib-logo"><a href="index.html">{{ ucfirst($user->name) ?? 'John Doe' }}</a></h1>
         <span class="position"><a href="#">Laravel Developer</a> in Philippines</span>
     </div>
     <nav id="colorlib-main-menu" role="navigation" class="navbar">
