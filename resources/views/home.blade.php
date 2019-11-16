@@ -14,6 +14,7 @@
                         </div>
                     @endif
 
+                    <a href="{{ route('home') }}" class="btn btn-sm btn-primary">Click Me!</a>
                     You are logged in!
                 </div>
             </div>
