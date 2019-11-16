@@ -47,8 +47,7 @@
                         <div class="about-desc">
                             <span class="heading-meta">About Us</span>
                             <h2 class="colorlib-heading">Who Am I?</h2>
-                            <p><strong>Hi I'm Jackson Ford</strong> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            <p><strong>Hi I'm Jackson Ford</strong> {{ $user->profile->about }}</p>
                         </div>
                     </div>
                 </div>
@@ -637,7 +636,7 @@
                         <i class="icon-globe-outline"></i>
                     </div>
                     <div class="colorlib-text">
-                        <p><a href="#">info@domain.com</a></p>
+                        <p><a href="{{ $user->profile->website }}">www.portofolio-janrey.tk</a></p>
                     </div>
                 </div>
 
@@ -646,7 +645,7 @@
                         <i class="icon-map"></i>
                     </div>
                     <div class="colorlib-text">
-                        <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                        <p>{{ $user->profile->address }}</p>
                     </div>
                 </div>
 
@@ -655,7 +654,7 @@
                         <i class="icon-phone"></i>
                     </div>
                     <div class="colorlib-text">
-                        <p><a href="tel://">+123 456 7890</a></p>
+                        <p><a href="tel://">{{ $user->profile->phone }}</a></p>
                     </div>
                 </div>
             </div>
