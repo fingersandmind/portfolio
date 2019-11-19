@@ -47,7 +47,7 @@
                         <div class="about-desc">
                             <span class="heading-meta">About Us</span>
                             <h2 class="colorlib-heading">Who Am I?</h2>
-                            <p><strong>Hi I'm Jackson Ford</strong> {{ $user->profile->about }}</p>
+                            <p><strong>Hi I'm {{ ucfirst($user->name) }}</strong> {{ $user->profile->about }}</p>
                         </div>
                     </div>
                 </div>
