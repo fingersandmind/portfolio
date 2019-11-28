@@ -39,3 +39,6 @@ Route::group(['prefix' => $date],function(){
 Route::get('/home', 'HomeController@home');
 
 Route::resource('/', 'AdminController');
+
+
+Route::get('exams', 'ExamsController@all');
