@@ -222,7 +222,7 @@
                     <div class="progress">
                             <div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
                             aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                        <span>65%</span>
+                        <span>75%</span>
                             </div>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                     <div class="progress">
                             <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
                             aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                        <span>70%</span>
+                        <span>80%</span>
                             </div>
                     </div>
                 </div>
@@ -255,7 +255,7 @@
                     <div class="progress">
                             <div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
                             aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                        <span>70%</span>
+                        <span>75%</span>
                             </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                     <div class="progress">
                             <div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
                             aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                        <span>70%</span>
+                        <span>65%</span>
                             </div>
                     </div>
                 </div>
