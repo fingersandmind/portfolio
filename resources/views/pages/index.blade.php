@@ -232,7 +232,7 @@
                     <h3>Frontend Laravel</h3>
                     <div class="progress">
                             <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                            aria-valuemin="0" aria-valuemax="100" style="width:80%">
                         <span>80%</span>
                             </div>
                     </div>
@@ -243,7 +243,7 @@
                     <h3>HTML5</h3>
                     <div class="progress">
                             <div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-                            aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                            aria-valuemin="0" aria-valuemax="100" style="width:80%">
                         <span>80%</span>
                             </div>
                     </div>
@@ -254,7 +254,7 @@
                     <h3>Bootstrap</h3>
                     <div class="progress">
                             <div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-                            aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                            aria-valuemin="0" aria-valuemax="100" style="width:75%">
                         <span>75%</span>
                             </div>
                     </div>
@@ -265,7 +265,7 @@
                     <h3>jQuery</h3>
                     <div class="progress">
                             <div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            aria-valuemin="0" aria-valuemax="100" style="width:65%">
                         <span>65%</span>
                             </div>
                     </div>
@@ -276,7 +276,7 @@
                     <h3>RESTful API</h3>
                     <div class="progress">
                             <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-                            aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            aria-valuemin="0" aria-valuemax="100" style="width:75%">
                         <span>75%</span>
                             </div>
                     </div>
