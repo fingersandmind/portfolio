@@ -29,7 +29,9 @@ $day = Carbon::now()->dayOfWeek;
 $date = $dayOfWeek[$day];
 
 Route::group(['prefix' => $date],function(){
-    Auth::routes();
+    Auth::routes([
+        'register' => false
+    ]);
 
     Route::get('/home', 'HomeController@index')->name('home');
     Route::post('/update', 'HomeController@updateData')->name('data.update');
