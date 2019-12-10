@@ -9,8 +9,10 @@ class ExamsController extends Controller
     public function all()
     {
         $this->tensTable(10);
-        $this->secondHighestNumberArray([1300, 2500, 1000, 1560, 1550, 1552]);
+        $this->thirdHighestNumberArray([1000, 2000, 3000, 4000, 5000, 6000]);
         $this->increasingNumber(10);
+        $this->pyramidStars(10);
+        $this->pyramidNumbers(5);
     }
     public function tensTable($num)
     {
@@ -30,10 +32,10 @@ class ExamsController extends Controller
         echo "<br><br>";
     }
 
-    public function secondHighestNumberArray($arrs)
+    public function thirdHighestNumberArray($arrs)
     {
 
-        echo "******[Second Highest Number In Array]******". "<br><br>";
+        echo "******[Arranging Numbers In Array]******". "<br><br>";
         
         foreach($arrs as $arr)
         {
@@ -42,7 +44,11 @@ class ExamsController extends Controller
         sort($arrs);
         $count = count($arrs);
         echo "<br>";
-        echo "The second Highest number in Array is " . $arrs[$count-2];
+        echo "The Highest Number in Array is : " . $arrs[$count-1];
+        echo "<br>";
+        echo "The Second Number in Array is : " . $arrs[$count-2];
+        echo "<br>";
+        echo "The Third Highest number in Array is : " . $arrs[$count-3];
         echo "<br><br>";
     }
 
@@ -58,6 +64,52 @@ class ExamsController extends Controller
             }
             echo "<br>";
             $i++;
+        }
+        echo "<br><br>";
+    }
+
+    public function pyramidStars($number)
+    {
+        echo "******[Pyramid of Numbers]******". "<br><br>";
+        $loopValue = 2*$number - 1;
+
+        for($i = 1; $i <=$number; $i++)
+        {
+            $val = 0;   
+            for($j = 1; $j <= $loopValue; $j++)
+            {
+                if($j >= $number-($i-1) && $j <= $number +($i-1))
+                {
+                    echo "*";
+                }else{
+                    echo "&nbsp&nbsp";
+                }
+                
+            }
+            echo "<br>";
+        }
+        echo "<br><br>";
+    }
+
+    public function pyramidNumbers($number)
+    {
+        echo "******[Pyramid of Numbers]******". "<br><br>";
+        $loopValue = 2*$number - 1;
+
+        for($i = 1; $i <=$number; $i++)
+        {
+            $val = 0;   
+            for($j = 1; $j <= $loopValue; $j++)
+            {
+                if($j >= $number-($i-1) && $j <= $number +($i-1))
+                {
+                    echo "&nbsp". $val += 1;
+                }else{
+                    echo "&nbsp&nbsp";
+                }
+                
+            }
+            echo "<br>";
         }
     }
 }
